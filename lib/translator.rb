@@ -28,7 +28,17 @@ end
 
 
 def get_japanese_emoticon
- YAML.load_file(file_path).each do |meaning 
+  library = { "get_meaning" => {}, "get_emoticon" => {}}
+ YAML.load_file(file_path).each do |meaning, loaded_array|
+   english, japanese = loaded_array 
+   
+   library[get_emoticon][english] = japanese
+   if !loaded_array[get_emoticon][english].nil?
+     library
+   else 
+     "sorry"
+   end 
+ end 
 end
 
 def get_english_meaning
