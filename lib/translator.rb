@@ -27,10 +27,10 @@ end
 # end
 
 
-def get_japanese_emoticon(file_pah)
+def get_japanese_emoticon(file_path, emoticon)
  library = load_library(file_pah)
  
-   library[get_emoticon][english] = japanese
+   library[emoticon][english] = japanese
    if !loaded_array[get_emoticon][english].nil?
      library
    else 
