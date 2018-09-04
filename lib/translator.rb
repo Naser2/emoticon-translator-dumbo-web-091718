@@ -4,7 +4,7 @@ require 'pry'
 # puts thing.inspect
 # require modules here
 
-def load_library(file_pah)
+def load_library(file_path)
   library = { "get_meaning" => {}, "get_emoticon" => {} }
   YAML.load_file("./lib/emoticons.yml").each do |meaning, emoticon_array_when_loaded|
     english, japanese = emoticon_array_when_loaded
