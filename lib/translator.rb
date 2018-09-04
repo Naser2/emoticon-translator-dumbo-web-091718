@@ -32,7 +32,7 @@ def get_japanese_emoticon(file_path, emoticon)
  
    japanese_emo = library["get_emoticon"][emoticon] 
    
-   if !loaded_array["get_emoticon"].nil?
+   if !library["get_emoticon"].nil?
      japanese_emo
    else 
      "sorry"
