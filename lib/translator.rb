@@ -28,7 +28,7 @@ end
 
 
 def get_japanese_emoticon(file_path, emoticon)
- library = load_library(file_pah)
+ library = load_library(file_path)
  
    library[emoticon][english] = japanese
    if !loaded_array[emoticon][english].nil?
