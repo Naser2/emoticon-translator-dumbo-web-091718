@@ -31,7 +31,7 @@ def get_japanese_emoticon(file_path, emoticon)
  library = load_library(file_pah)
  
    library[emoticon][english] = japanese
-   if !loaded_array[get_emoticon][english].nil?
+   if !loaded_array[emoticon][english].nil?
      library
    else 
      "sorry"
