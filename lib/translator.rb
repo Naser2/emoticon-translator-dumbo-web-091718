@@ -27,7 +27,7 @@ end
 # end
 
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file_pah)
  library = load_library(file_pah)
  
    library[get_emoticon][english] = japanese
