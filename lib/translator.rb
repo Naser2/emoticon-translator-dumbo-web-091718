@@ -27,7 +27,7 @@ end
 # end
 
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file_path)
   library = { "get_meaning" => {}, "get_emoticon" => {}}
  YAML.load_file(file_path).each do |meaning, loaded_array|
    english, japanese = loaded_array 
