@@ -30,12 +30,21 @@ end
 def get_japanese_emoticon(file_path, emoticon)
  library = load_library(file_path)
  
-   library[emoticon][english] = japanese
-   if !loaded_array[emoticon][english].nil?
+   library[get_emoticon][emotion] 
+   if !loaded_array[get_emoticon].nil?
      library
    else 
      "sorry"
    end 
+end
+def get_japanese_emoticon(file_path, emoticon)
+  library = load_library(file_path)
+  result = library["get_emoticon"][emoticon]
+  if result
+    result
+  else
+    "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning
